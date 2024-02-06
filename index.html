@@ -94,6 +94,25 @@
             color: rgb(168, 170, 231);
         }
 
+        .welcomeWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        #element2 {
+            color: rgb(221, 212, 224);
+            font-size: xx-large;
+        }
+        #element3{
+            color: rgb(212, 202, 215);
+            font-size: xx-large;
+        }
+
         .secondSection {
             max-width: 80vw;
             margin: auto;
@@ -127,36 +146,40 @@
         }
 
         .vertical-title {
-            position:relative;
-            top:75px;
-            width:150px;
+            position: relative;
+            top: 75px;
+            width: 150px;
         }
 
         .vertical-desc {
-            position:relative;
-            top:86px;
-            color:gray;
-            width:150px;
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
             font-family: 9px;
         }
-        footer{
+
+        footer {
             background-color: rgb(74, 34, 74);
         }
-        .footer{
+
+        .footer {
             display: flex;
             padding: 23px;
             justify-content: space-evenly;
         }
-        .footer ul{
+
+        .footer ul {
             list-style: none;
         }
 
-        .footer > div{
+        .footer>div {
             width: 223px;
         }
-        footer .footer-rights{
+
+        footer .footer-rights {
             text-align: center;
-            color:gray;
+            color: gray;
             padding: 12px 0;
         }
     </style>
@@ -189,7 +212,12 @@
                 <img src="bg.png" alt="">
             </div>
         </section>
-        <hr>
+        <div class="welcomeWrapper">
+            <hr>
+            <span id="element2"></span><br>
+            <span id="element3"></span>
+            <hr>
+        </div>
         <section class="secondSection">
             <span class="textgrey">What I have done so far</span>
             <h1>Work Experience</h1>
@@ -197,12 +225,12 @@
             <div class="box">
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title">SDE Intern (Jan 2022-Jul 2022)</div>
+                    <div class="vertical-title">SDE Intern (Jan 2022-Jul 2022) At ZopSmart</div>
                     <div class="vertical-desc">Got Training in Various Tech</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title">SDE Android Developer (July 2022-Present )</div>
+                    <div class="vertical-title">SDE Android Developer (July 2022-Present ) At ZopSmart</div>
                     <div class="vertical-desc">Working On More Than 7 projects</div>
                 </div>
             </div>
@@ -212,37 +240,37 @@
     <footer>
         <div class="footer">
 
-             <div class="footer_first">
+            <div class="footer_first">
                 <h3>Akash's Developer Portfolio</h3>
-             </div>
-             <div class="footer_second">
+            </div>
+            <div class="footer_second">
                 <ul>
                     <li>Home</li>
                     <li>About</li>
                     <li>Contact Me</li>
                     <li>Experience</li>
-                
+
                 </ul>
-             </div>
-             <div class="footer_third">
+            </div>
+            <div class="footer_third">
                 <ul>
                     <li>Home</li>
                     <li>About</li>
                     <li>Contact Me</li>
                     <li>Experience</li>
-                
+
                 </ul>
-             </div>
-             <div class="footer_fourth">
+            </div>
+            <div class="footer_fourth">
                 <ul>
                     <li>Home</li>
                     <li>About</li>
                     <li>Contact Me</li>
                     <li>Experience</li>
-                
+
                 </ul>
-             </div>
-    
+            </div>
+
         </div>
         <div class="footer-rights">
             Copyright &#169 akashportfolio.com | All rights reserved
@@ -253,6 +281,16 @@
         var typed = new Typed('#element', {
             strings: ['Mobile Developer', 'Android Developer'],
             typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var typed2 = new Typed('#element2', {
+            strings: ['Development of my Portfolio Website is under progress, Stay Tuned...... Thanks! Come Again'], typeSpeed: 50
+        });
+    </script>
+     <script>
+        var typed2 = new Typed('#element3', {
+            strings: ['I am working on it, Yours Akash Gupta'], typeSpeed: 50
         });
     </script>
 </body>
